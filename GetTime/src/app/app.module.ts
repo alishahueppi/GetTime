@@ -1,16 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OverviewComponent } from './overview/overview.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatDatepickerModule, MatFormFieldModule, MatInputModule, MatTableModule} from '@angular/material';
+import {MatDatepickerModule, MatFormFieldModule, MatInputModule, MatNativeDateModule, MatTableModule} from '@angular/material';
+import { InputFieldsComponent } from './input-fields/input-fields.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OverviewComponent
+    InputFieldsComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +18,8 @@ import {MatDatepickerModule, MatFormFieldModule, MatInputModule, MatTableModule}
     MatTableModule,
     MatFormFieldModule,
     MatDatepickerModule,
-    MatInputModule
+    MatInputModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
