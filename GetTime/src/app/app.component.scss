@@ -2,12 +2,13 @@
   height: 100vh;
   width: 100vw;
 }
+
 #header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-left: 7px;
   padding-right: 7px;
+  background-color: lightblue;
 }
 
 #logo {
@@ -15,13 +16,13 @@
   background-color: white;
   border-radius: 50%;
   border-color: white;
-  color:darksalmon;
+  color: lightblue;
   cursor: pointer;
   display: inline-flex;
 }
 
 #titel {
   display: inline-flex;
-  color:darksalmon;
+  color: white;
+  margin-left: 10px;
 }
-
