@@ -2,6 +2,10 @@
   background-color: white;
   height: auto;
 }
+#calendar {
+  height: 450px;
+  width: 400px;
+}
 
 #datePicker {
   padding: 5px;
@@ -15,8 +19,12 @@
   margin-left: 10px;
 }
 
+.time {
+  width: 150px;
+}
+
 #comment {
-  width: 467px;
+  width: 470px;
   margin-left: 10px;
 }
 

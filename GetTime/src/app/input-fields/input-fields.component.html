@@ -1,4 +1,8 @@
 <div class="inputFields-contianer">
+    <div id="calendar" class="calendar-wrapper">
+        <mat-calendar #calendar>
+        </mat-calendar>
+    </div>
     <mat-form-field id="datePicker">
         <label>
             <input matInput [matDatepicker]="picker" placeholder="Datum">
@@ -8,14 +12,14 @@
     </mat-form-field>
     <div id="inputfieldsContainer">
         <div>
-            <mat-form-field class="projects"  appearance="outline">
+            <mat-form-field class="projects , time" appearance="outline">
                 <mat-label>Proj. ID</mat-label>
                 <label>
                     <input matInput placeholder="10037">
                 </label>
                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
             </mat-form-field>
-            <mat-form-field class="projects"  appearance="outline">
+            <mat-form-field class="projects" appearance="outline">
                 <mat-label>Proj. Name</mat-label>
                 <label>
                     <input matInput placeholder="Project X">
@@ -24,21 +28,21 @@
             </mat-form-field>
         </div>
         <div>
-            <mat-form-field class="projects" appearance="outline">
+            <mat-form-field class="projects , time" appearance="outline">
                 <mat-label>Std</mat-label>
                 <label>
                     <input matInput placeholder="8.2">
                 </label>
                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
             </mat-form-field>
-            <mat-form-field  class="projects" appearance="outline">
+            <mat-form-field class="projects , time" appearance="outline">
                 <mat-label>von</mat-label>
                 <label>
                     <input matInput placeholder="07.00">
                 </label>
                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
             </mat-form-field>
-            <mat-form-field  class="projects" appearance="outline">
+            <mat-form-field class="projects , time" appearance="outline">
                 <mat-label>bis</mat-label>
                 <label>
                     <input matInput placeholder="12.00">
