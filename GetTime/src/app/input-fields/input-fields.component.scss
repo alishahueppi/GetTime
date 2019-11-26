@@ -1,6 +1,7 @@
 .inputFields-contianer {
   background-color: white;
   height: auto;
+  display: flex;
 }
 #calendar {
   height: 450px;
@@ -12,6 +13,7 @@
 }
 
 #inputfieldsContainer {
+  margin-left: 100px;
   display: block;
 }
 

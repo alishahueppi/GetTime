@@ -3,14 +3,15 @@
         <mat-calendar #calendar>
         </mat-calendar>
     </div>
-    <mat-form-field id="datePicker">
+
+    <div id="inputfieldsContainer">
+      <mat-form-field id="datePicker">
         <label>
-            <input matInput [matDatepicker]="picker" placeholder="Datum">
+          <input matInput [matDatepicker]="picker" placeholder="Datum">
         </label>
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
-    </mat-form-field>
-    <div id="inputfieldsContainer">
+      </mat-form-field>
         <div>
             <mat-form-field class="projects , time" appearance="outline">
                 <mat-label>Proj. ID</mat-label>
