@@ -12,11 +12,13 @@ import {
     MatTableModule
 } from '@angular/material';
 import {InputFieldsComponent} from './input-fields/input-fields.component';
+import { CountableValuesComponent } from './countable-values/countable-values.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        InputFieldsComponent
+        InputFieldsComponent,
+        CountableValuesComponent
     ],
     imports: [
         BrowserModule,
