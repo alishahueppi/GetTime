@@ -4,6 +4,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
+    MatCardModule,
     MatDatepickerModule,
     MatFormFieldModule,
     MatIconModule,
@@ -30,6 +31,7 @@ import { CountableValuesComponent } from './countable-values/countable-values.co
         MatNativeDateModule,
         MatIconModule,
         MatInputModule,
+        MatCardModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
