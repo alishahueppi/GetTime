@@ -1,19 +1,58 @@
 <div class="inputFields-contianer">
-  <mat-form-field id="datePicker">
-    <label>
-      <input matInput [matDatepicker]="picker" placeholder="Datum">
-    </label>
-    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-    <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
-  </mat-form-field>
-  <div class="mdc-text-field mdc-text-field--outlined">
-    <input type="text" id="tf-outlined" class="mdc-text-field__input">
-    <div class="mdc-notched-outline">
-      <div class="mdc-notched-outline__leading"></div>
-      <div class="mdc-notched-outline__notch">
-        <label for="tf-outlined" class="mdc-floating-label">Your Name</label>
-      </div>
-      <div class="mdc-notched-outline__trailing"></div>
+    <mat-form-field id="datePicker">
+        <label>
+            <input matInput [matDatepicker]="picker" placeholder="Datum">
+        </label>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+    </mat-form-field>
+    <div id="inputfieldsContainer">
+        <div>
+            <mat-form-field class="projects"  appearance="outline">
+                <mat-label>Proj. ID</mat-label>
+                <label>
+                    <input matInput placeholder="10037">
+                </label>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+            <mat-form-field class="projects"  appearance="outline">
+                <mat-label>Proj. Name</mat-label>
+                <label>
+                    <input matInput placeholder="Project X">
+                </label>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field class="projects" appearance="outline">
+                <mat-label>Std</mat-label>
+                <label>
+                    <input matInput placeholder="8.2">
+                </label>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+            <mat-form-field  class="projects" appearance="outline">
+                <mat-label>von</mat-label>
+                <label>
+                    <input matInput placeholder="07.00">
+                </label>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+            <mat-form-field  class="projects" appearance="outline">
+                <mat-label>bis</mat-label>
+                <label>
+                    <input matInput placeholder="12.00">
+                </label>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </div>
+        <mat-form-field appearance="outline" id="comment">
+            <mat-label>Beschreibung</mat-label>
+            <label>
+                <input matInput placeholder="Planung von Project X, ...">
+            </label>
+            <!--    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+        </mat-form-field>
     </div>
-  </div>
+
 </div>

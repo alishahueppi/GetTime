@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {MDCTextField} from '@material/textfield';
 @Component({
   selector: 'app-input-fields',
   templateUrl: './input-fields.component.html',
