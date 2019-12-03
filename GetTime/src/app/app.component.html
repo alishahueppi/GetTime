@@ -1,9 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
+<div class="app-container">
+  <header id="header">
+    <i class="material-icons" id="logo">access_time</i>
+    <h3 id="titel">{{title}}</h3>
+  </header>
+  <app-countable-values></app-countable-values>
+  <app-input-fields></app-input-fields>
 </div>
-<app-overview></app-overview>
 
 <router-outlet></router-outlet>

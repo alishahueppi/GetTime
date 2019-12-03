@@ -1,0 +1,52 @@
+.inputFields-contianer {
+  background-color: white;
+  height: auto;
+  display: flex;
+  margin-left: 100px;
+}
+#calendar {
+  height: 450px;
+  width: 400px;
+}
+
+#datePicker {
+  padding: 5px;
+}
+
+#inputfieldsContainer {
+  margin-left: 100px;
+  display: block;
+}
+
+.projects {
+  margin-left: 10px;
+}
+
+.time {
+  width: 150px;
+}
+
+#comment {
+  width: 470px;
+  margin-left: 10px;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: lightblue !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: lightblue !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: lightblue !important;;
+}
+
+::ng-deep.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: lightblue !important;
+}
+
