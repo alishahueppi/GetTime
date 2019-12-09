@@ -50,3 +50,25 @@
   color: lightblue !important;
 }
 
+#btns {
+  display: flex;
+  justify-content: flex-end;
+  color: lightblue!important;
+  margin-top: 267px;
+  margin-left: 190px;
+  margin-bottom: 10px;
+  height: 50px;
+  position: sticky;
+}
+
+.bluebtn {
+  background-color: lightblue;
+  color: white;
+  margin-right: 20px;
+}
+
+.whitebtn {
+  background-color: white;
+  color: lightblue;
+  margin-right: 10px;
+}
