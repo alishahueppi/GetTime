@@ -1,11 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="app-container">
-  <header id="header">
-    <i class="material-icons" id="logo">access_time</i>
-    <h3 id="titel">{{title}}</h3>
-  </header>
-  <app-countable-values></app-countable-values>
-  <app-input-fields></app-input-fields>
+    <header id="header">
+
+        <i class="material-icons" id="logo">access_time</i>
+        <h3 id="titel">{{title}}</h3>
+
+        <mat-button-toggle id="allProjects" (click)="openProjects()">Projekte</mat-button-toggle>
+    </header>
+    <app-countable-values></app-countable-values>
+    <app-input-fields></app-input-fields>
 </div>
 
 <router-outlet></router-outlet>

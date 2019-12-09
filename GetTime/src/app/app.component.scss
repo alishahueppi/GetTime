@@ -4,11 +4,14 @@
 }
 
 #header {
-  display: flex;
+  display: grid;
+  //width: 100%;
+  //justify-content: space-between;
   align-items: center;
   padding-left: 7px;
   padding-right: 7px;
   background-color: lightblue;
+  grid-template-columns: 50px 1100px 100px;
 }
 
 #logo {
@@ -26,3 +29,8 @@
   color: white;
   margin-left: 10px;
 }
+
+#allProjects {
+  color: lightblue;
+}
+

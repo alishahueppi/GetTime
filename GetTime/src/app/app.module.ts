@@ -4,8 +4,9 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
+    MatButtonToggleModule,
     MatCardModule,
-    MatDatepickerModule,
+    MatDatepickerModule, MatDialog, MatDialogModule,
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
@@ -14,13 +15,16 @@ import {
 } from '@angular/material';
 import {InputFieldsComponent} from './input-fields/input-fields.component';
 import { CountableValuesComponent } from './countable-values/countable-values.component';
+import { ProjectViewComponent } from './project-view/project-view.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         InputFieldsComponent,
-        CountableValuesComponent
+        CountableValuesComponent,
+        ProjectViewComponent
     ],
+    entryComponents: [ProjectViewComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -32,6 +36,8 @@ import { CountableValuesComponent } from './countable-values/countable-values.co
         MatIconModule,
         MatInputModule,
         MatCardModule,
+        MatButtonToggleModule,
+        MatDialogModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

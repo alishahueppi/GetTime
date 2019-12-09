@@ -1,0 +1,15 @@
+.popup-header {
+  background-color: lightblue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.close-button {
+  float: right;
+  cursor: pointer;
+}
+.mat-dialog-container {
+  padding: 0px!important;
+}
