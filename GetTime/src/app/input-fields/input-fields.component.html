@@ -31,7 +31,7 @@
             <mat-form-field class="projects , time" appearance="outline">
                 <mat-label>Std</mat-label>
                 <label>
-                    <input matInput placeholder="8.2">
+                    <input matInput [(ngModel)]="myInput" placeholder="8.2">
                 </label>
                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
             </mat-form-field>
@@ -59,7 +59,7 @@
         </mat-form-field>
     </div>
     <div id="btns">
-        <mat-button-toggle class="whitebtn">Abbrechen</mat-button-toggle>
-        <mat-button-toggle class="bluebtn">Speichern</mat-button-toggle>
+        <mat-button-toggle class="whitebtn" (click)="cancel()">Abbrechen</mat-button-toggle>
+        <mat-button-toggle class="bluebtn" (click)="save()">Speichern</mat-button-toggle>
     </div>
 </div>

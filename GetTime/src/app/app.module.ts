@@ -16,6 +16,7 @@ import {
 import {InputFieldsComponent} from './input-fields/input-fields.component';
 import { CountableValuesComponent } from './countable-values/countable-values.component';
 import { ProjectViewComponent } from './project-view/project-view.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
     declarations: [
@@ -38,6 +39,7 @@ import { ProjectViewComponent } from './project-view/project-view.component';
         MatCardModule,
         MatButtonToggleModule,
         MatDialogModule,
+        FormsModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
